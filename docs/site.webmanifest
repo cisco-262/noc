@@ -1,0 +1,11 @@
+{
+  "name": "OpsHome",
+  "short_name": "OpsHome",
+  "description": "Practical iPhone tools for network, infrastructure, domain, SSL, and WiFi health.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#041022",
+  "theme_color": "#06142d",
+  "icons": []
+}
