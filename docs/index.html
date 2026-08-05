@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06142d">
+  <meta name="color-scheme" content="dark">
+
+  <title>OpsHome — iPhone Tools for Network, Infrastructure & Domain Health</title>
+  <meta name="description" content="OpsHome builds focused iPhone tools for homelab monitoring, domain health inspection, SSL expiry reminders, and local WiFi diagnostics.">
+  <meta name="keywords" content="OpsHome, iPhone network tools, homelab monitoring, domain health, SSL reminder, WiFi diagnostics, Proxmox monitoring, Docker monitoring">
+  <meta name="author" content="OpsHome">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://opshome.run/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OpsHome">
+  <meta property="og:title" content="OpsHome — Practical Tools for Real IT Operations">
+  <meta property="og:description" content="Explore OpsHome NOC, Domain Health Inspector, SSL Reminder, and WiFi Health Check for iPhone.">
+  <meta property="og:url" content="https://opshome.run/">
+  <meta property="og:image" content="https://opshome.run/og-opshome-products.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OpsHome product ecosystem for network monitoring, domain health, SSL and WiFi diagnostics">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OpsHome — Practical Tools for Real IT Operations">
+  <meta name="twitter:description" content="Focused iPhone tools for monitoring, domain health, SSL reminders, and WiFi diagnostics.">
+  <meta name="twitter:image" content="https://opshome.run/og-opshome-products.png">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OpsHome",
+    "url": "https://opshome.run/",
+    "logo": "https://opshome.run/favicon.svg",
+    "description": "OpsHome builds focused iPhone tools for network operations, infrastructure monitoring, domain health, SSL expiry reminders, and WiFi diagnostics.",
+    "sameAs": [
+      "https://app.opshome.run/",
+      "https://domain.opshome.run/",
+      "https://ssl.opshome.run/",
+      "https://wifi.opshome.run/"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "OpsHome Products",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://app.opshome.run/",
+        "name": "OpsHome NOC"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "url": "https://domain.opshome.run/",
+        "name": "Domain Health Inspector"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "url": "https://ssl.opshome.run/",
+        "name": "SSL Reminder"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "url": "https://wifi.opshome.run/",
+        "name": "WiFi Health Check"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="site-shell">
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="OpsHome homepage">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 44 44" role="img">
+              <path d="M22 4 38 13v18L22 40 6 31V13L22 4Z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+              <path d="m13 25 6-6 5 5 8-8" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="13" cy="25" r="2.2" fill="currentColor"/>
+              <circle cx="19" cy="19" r="2.2" fill="currentColor"/>
+              <circle cx="24" cy="24" r="2.2" fill="currentColor"/>
+              <circle cx="32" cy="16" r="2.2" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="brand-text">Ops<span>Home</span></span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+          <span class="sr-only">Open navigation</span>
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation" data-nav>
+          <a href="#products">Products</a>
+          <a href="#ecosystem">Ecosystem</a>
+          <a href="#principles">Principles</a>
+          <a href="https://docs.opshome.run/">Documentation</a>
+          <a class="nav-cta" href="https://app.opshome.run/">Open OpsHome NOC</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-pad" aria-labelledby="hero-title">
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+
+        <div class="container hero-layout">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="pulse-dot"></span> Built from real IT operations experience</p>
+            <h1 id="hero-title">Focused tools for a<br><span>healthier digital home.</span></h1>
+            <p class="hero-lead">OpsHome creates practical iPhone apps for monitoring infrastructure, inspecting domains, tracking SSL certificates, and diagnosing WiFi—without turning everyday checks into enterprise complexity.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#products">
+                Explore all products
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="button button-secondary" href="https://app.opshome.run/">Visit OpsHome NOC</a>
+            </div>
+            <div class="trust-row" aria-label="Product principles">
+              <span>iPhone-first</span>
+              <span>Privacy-conscious</span>
+              <span>Purpose-built</span>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal delay-1" aria-label="OpsHome product ecosystem diagram">
+            <div class="radar-card">
+              <div class="radar-topbar">
+                <div>
+                  <span class="micro-label">OPSHOME ECOSYSTEM</span>
+                  <strong>Operational overview</strong>
+                </div>
+                <span class="status-chip"><i></i> Online</span>
+              </div>
+
+              <div class="radar-stage">
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+                <div class="orbit orbit-3"></div>
+                <div class="sweep"></div>
+
+                <a class="radar-node node-core" href="https://app.opshome.run/" aria-label="Open OpsHome NOC">
+                  <span class="node-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18V9m5 9V5m5 13v-7m5 7V3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                  </span>
+                  <strong>NOC</strong>
+                  <small>Monitor</small>
+                </a>
+
+                <a class="radar-node node-domain" href="https://domain.opshome.run/" aria-label="Open Domain Health Inspector">
+                  <span class="node-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.7 12h16.6M12 3.5c2.3 2.4 3.4 5.2 3.4 8.5s-1.1 6.1-3.4 8.5M12 3.5C9.7 5.9 8.6 8.7 8.6 12s1.1 6.1 3.4 8.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+                  </span>
+                  <strong>Domain</strong>
+                  <small>Inspect</small>
+                </a>
+
+                <a class="radar-node node-ssl" href="https://ssl.opshome.run/" aria-label="Open SSL Reminder">
+                  <span class="node-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10m-4 4v2.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                  </span>
+                  <strong>SSL</strong>
+                  <small>Remind</small>
+                </a>
+
+                <a class="radar-node node-wifi" href="https://wifi.opshome.run/" aria-label="Open WiFi Health Check">
+                  <span class="node-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.7a12.4 12.4 0 0 1 16 0M7 13a7.8 7.8 0 0 1 10 0m-7 3.1a3.2 3.2 0 0 1 4 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="19" r="1.2" fill="currentColor"/></svg>
+                  </span>
+                  <strong>WiFi</strong>
+                  <small>Diagnose</small>
+                </a>
+              </div>
+
+              <div class="radar-footer">
+                <div><span>4</span><small>Focused apps</small></div>
+                <div><span>1</span><small>Connected ecosystem</small></div>
+                <div><span>iOS</span><small>Built for iPhone</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-strip" aria-label="Product categories">
+        <div class="container strip-inner">
+          <span>Infrastructure Monitoring</span>
+          <i></i>
+          <span>Domain & DNS Health</span>
+          <i></i>
+          <span>SSL Expiry Alerts</span>
+          <i></i>
+          <span>WiFi Diagnostics</span>
+        </div>
+      </section>
+
+      <section class="products section-pad" id="products" aria-labelledby="products-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">PRODUCTS</p>
+              <h2 id="products-title">One ecosystem. Four focused tools.</h2>
+            </div>
+            <p>Choose the depth you need—from a complete homelab operations view to a fast, single-purpose diagnostic.</p>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card product-card-featured reveal">
+              <div class="card-accent"></div>
+              <div class="product-card-head">
+                <span class="product-icon icon-noc">
+                  <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 22V11m6 11V6m6 16v-8m6 8V4" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg>
+                </span>
+                <span class="product-tag">FLAGSHIP</span>
+              </div>
+              <div class="product-copy">
+                <p class="product-kicker">MONITORING & INFRASTRUCTURE</p>
+                <h3>OpsHome NOC</h3>
+                <p>See whether your homelab is healthy at a glance. Monitor public services, Docker, Proxmox, Synology, Linux hosts, and private services from one iPhone app.</p>
+              </div>
+              <ul class="feature-list">
+                <li>Public and private monitoring</li>
+                <li>Outbound-only Docker Probe</li>
+                <li>Infrastructure status and alerts</li>
+              </ul>
+              <a class="card-link" href="https://app.opshome.run/">
+                Explore OpsHome NOC
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </article>
+
+            <article class="product-card reveal delay-1">
+              <div class="product-card-head">
+                <span class="product-icon icon-domain">
+                  <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4.5 14h19M14 4c2.8 2.8 4.2 6.2 4.2 10S16.8 21.2 14 24M14 4c-2.8 2.8-4.2 6.2-4.2 10s1.4 7.2 4.2 10" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                </span>
+                <span class="product-tag">INSPECT</span>
+              </div>
+              <div class="product-copy">
+                <p class="product-kicker">DOMAIN, DNS, HTTPS & MAIL</p>
+                <h3>Domain Health Inspector</h3>
+                <p>Review domain expiry, DNS records, HTTPS reachability, TLS handshakes, and mail security checks in one focused report.</p>
+              </div>
+              <ul class="feature-list">
+                <li>RDAP registration and expiry</li>
+                <li>DNS records grouped by type</li>
+                <li>Local-first backup and reports</li>
+              </ul>
+              <a class="card-link" href="https://domain.opshome.run/">
+                Inspect domain health
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </article>
+
+            <article class="product-card reveal">
+              <div class="product-card-head">
+                <span class="product-icon icon-ssl">
+                  <svg viewBox="0 0 28 28" aria-hidden="true"><rect x="5" y="12" width="18" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 12V8.5a5 5 0 0 1 10 0V12m-5 5v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <span class="product-tag">REMIND</span>
+              </div>
+              <div class="product-copy">
+                <p class="product-kicker">CERTIFICATE EXPIRY</p>
+                <h3>SSL Reminder</h3>
+                <p>Monitor up to 15 public SSL certificates for free with daily cloud checks and timely iPhone push notifications.</p>
+              </div>
+              <ul class="feature-list">
+                <li>15 certificates free</li>
+                <li>Daily cloud checks</li>
+                <li>No account and no ads</li>
+              </ul>
+              <a class="card-link" href="https://ssl.opshome.run/">
+                Never miss an expiry
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </article>
+
+            <article class="product-card reveal delay-1">
+              <div class="product-card-head">
+                <span class="product-icon icon-wifi">
+                  <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M4 11a15 15 0 0 1 20 0M8 15.5a9 9 0 0 1 12 0m-8 4a3.2 3.2 0 0 1 4 0" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><circle cx="14" cy="23" r="1.4" fill="currentColor"/></svg>
+                </span>
+                <span class="product-tag">DIAGNOSE</span>
+              </div>
+              <div class="product-copy">
+                <p class="product-kicker">LOCAL WIFI & LAN</p>
+                <h3>WiFi Health Check</h3>
+                <p>Run local-only checks for internet reachability, WiFi security, gateway information, LAN TCP stability, and roaming behavior.</p>
+              </div>
+              <ul class="feature-list">
+                <li>One-tap network diagnosis</li>
+                <li>LAN TCP stability tests</li>
+                <li>Local-only diagnostic reports</li>
+              </ul>
+              <a class="card-link" href="https://wifi.opshome.run/">
+                Diagnose your WiFi
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="ecosystem section-pad" id="ecosystem" aria-labelledby="ecosystem-title">
+        <div class="container ecosystem-layout">
+          <div class="ecosystem-copy reveal">
+            <p class="eyebrow">CONNECTED BY PURPOSE</p>
+            <h2 id="ecosystem-title">Start with a quick check.<br>Go deeper when needed.</h2>
+            <p>Each OpsHome product solves a clear operational problem. Together, they cover the path from local diagnosis to continuous monitoring.</p>
+
+            <div class="flow-list">
+              <a href="https://wifi.opshome.run/">
+                <span>01</span>
+                <div><strong>Diagnose the local network</strong><small>WiFi and LAN health</small></div>
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="https://domain.opshome.run/">
+                <span>02</span>
+                <div><strong>Inspect public-facing assets</strong><small>Domain, DNS, HTTPS and mail</small></div>
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="https://ssl.opshome.run/">
+                <span>03</span>
+                <div><strong>Keep certificates current</strong><small>Daily expiry monitoring</small></div>
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="https://app.opshome.run/">
+                <span>04</span>
+                <div><strong>Operate the full environment</strong><small>Continuous NOC-style monitoring</small></div>
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="stack-panel reveal delay-1" aria-hidden="true">
+            <div class="stack-glow"></div>
+            <div class="stack-card stack-card-1">
+              <span>LOCAL LAYER</span>
+              <strong>WiFi & LAN</strong>
+              <i></i>
+            </div>
+            <div class="stack-card stack-card-2">
+              <span>PUBLIC ASSET LAYER</span>
+              <strong>Domain · DNS · SSL</strong>
+              <i></i>
+            </div>
+            <div class="stack-card stack-card-3">
+              <span>OPERATIONS LAYER</span>
+              <strong>Services · Docker · Infrastructure</strong>
+              <i></i>
+            </div>
+            <div class="stack-core">
+              <svg viewBox="0 0 44 44"><path d="M22 4 38 13v18L22 40 6 31V13L22 4Z" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m13 25 6-6 5 5 8-8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <strong>OpsHome</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="principles section-pad" id="principles" aria-labelledby="principles-title">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <div>
+              <p class="eyebrow">DESIGN PRINCIPLES</p>
+              <h2 id="principles-title">Useful signal, without unnecessary noise.</h2>
+            </div>
+            <p>OpsHome products are designed to stay understandable, focused, and practical for day-to-day technical work.</p>
+          </div>
+
+          <div class="principle-grid">
+            <article class="principle-card reveal">
+              <span>01</span>
+              <h3>Focused by design</h3>
+              <p>Each app has a clear job, so you can get an answer without navigating an oversized platform.</p>
+            </article>
+            <article class="principle-card reveal delay-1">
+              <span>02</span>
+              <h3>Privacy-conscious</h3>
+              <p>Local-first workflows and minimal data collection are used wherever the product can work without cloud complexity.</p>
+            </article>
+            <article class="principle-card reveal delay-2">
+              <span>03</span>
+              <h3>Operations-informed</h3>
+              <p>Features are shaped by practical infrastructure, networking, troubleshooting, and homelab experience.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section section-pad">
+        <div class="container">
+          <div class="cta-panel reveal">
+            <div class="cta-grid" aria-hidden="true"></div>
+            <div>
+              <p class="eyebrow">YOUR PERSONAL OPERATIONS TOOLKIT</p>
+              <h2>Choose the tool that matches the problem.</h2>
+              <p>Begin with a focused check today, then connect the wider picture with OpsHome NOC.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="button button-light" href="#products">View products</a>
+              <a class="button button-outline-light" href="https://app.opshome.run/">Open OpsHome NOC</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="OpsHome homepage">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 44 44"><path d="M22 4 38 13v18L22 40 6 31V13L22 4Z" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="m13 25 6-6 5 5 8-8" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="brand-text">Ops<span>Home</span></span>
+          </a>
+          <p>Practical iPhone tools inspired by real network and infrastructure operations.</p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <strong>Products</strong>
+            <a href="https://app.opshome.run/">OpsHome NOC</a>
+            <a href="https://domain.opshome.run/">Domain Health Inspector</a>
+            <a href="https://ssl.opshome.run/">SSL Reminder</a>
+            <a href="https://wifi.opshome.run/">WiFi Health Check</a>
+          </div>
+          <div>
+            <strong>Resources</strong>
+            <a href="https://docs.opshome.run/">Documentation</a>
+            <a href="https://app.opshome.run/privacy.html">Privacy</a>
+            <a href="https://app.opshome.run/terms.html">Terms</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© <span data-year>2026</span> OpsHome. All rights reserved.</p>
+        <p>Network clarity, one focused tool at a time.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
