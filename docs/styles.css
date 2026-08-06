@@ -597,15 +597,21 @@ button {
 }
 
 .node-icon {
-  width: 28px;
-  height: 28px;
+  width: 34px;
+  height: 34px;
   margin-bottom: 5px;
-  color: var(--blue-2);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 9px;
+  filter: drop-shadow(0 4px 8px rgba(0, 8, 28, 0.34));
 }
 
-.node-icon svg {
+.node-icon img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
 }
 
 .radar-node strong {
@@ -797,25 +803,24 @@ button {
 }
 
 .product-icon {
-  width: 58px;
-  height: 58px;
+  width: 62px;
+  height: 62px;
   display: grid;
   place-items: center;
+  padding: 4px;
+  overflow: hidden;
   border: 1px solid rgba(100, 190, 255, 0.2);
-  border-radius: 15px;
+  border-radius: 16px;
   background: rgba(34, 115, 197, 0.13);
-  color: var(--blue-2);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), 0 8px 22px rgba(0, 8, 30, 0.2);
 }
 
-.product-icon svg {
-  width: 29px;
-  height: 29px;
+.product-icon img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  border-radius: 12px;
 }
-
-.icon-domain { color: #71d7ff; }
-.icon-ssl { color: #7a9eff; }
-.icon-wifi { color: #55e0ce; }
 
 .product-tag {
   padding: 5px 8px;

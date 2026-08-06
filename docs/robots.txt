@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://opshome.run/sitemap.xml
+Sitemap: https://noc.opshome.run/sitemap.xml
