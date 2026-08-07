@@ -99,8 +99,8 @@ OpsHome apps are designed around a few simple principles:
 
 ## Websites
 
-- OpsHome: https://opshome.run
-- OpsHome NOC: https://noc.opshome.run
+- OpsHome: https://noc.opshome.run
+- OpsHome NOC: https://app.opshome.run
 - SSL Reminder: https://ssl.opshome.run
 - WiFi Health Check: https://wifi.opshome.run
 - Domain Health Inspector: https://domain.opshome.run
