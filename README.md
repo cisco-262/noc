@@ -22,7 +22,7 @@ Monitor services and infrastructure including:
 - Private services
 - Network and service health
 
-Website: https://noc.opshome.run
+Website: https://app.opshome.run
 
 ---
 
